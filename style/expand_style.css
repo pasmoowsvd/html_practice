@@ -1,0 +1,22 @@
+/* body { background-color: lightyellow; } */
+p { color: red; text-decoration: underline; }
+
+fixed_bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  
+  height: 200px;
+  padding: 1rem;
+  color: white;
+  background: teal;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body {
+  padding-top: 200px;  
+}
