@@ -1,21 +1,53 @@
-/* body { background-color: lightyellow; } */
-p { color: red; text-decoration: underline; }
+/* 전역변수 설정 */
+/* 변수 사용할때는 var(--value_1) 이런식으로 사용하면 됨 */
+:root {
+  --color-success: #23d160;
+  --color-error: #f14668;
+  --value_1 : 32px;
+  /* --fixed_bar_height : 200px; */
+  --fixed_bar_height : 10rem;
+}
 
+
+/* body { background-color: lightyellow; } */
+p_style { color: red; text-decoration: underline; }
+
+/* 원하는 태그명으로 선언 가능 */
 fixed_bar {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  
-  height: 200px;
+    
+  height: var(--fixed_bar_height);
   padding: 1rem;
+  padding: 1rem;
+
+  background: skyblue;
   color: white;
-  background: teal;
   font-weight: bold;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
+sticky_bar {
+  position: sticky;
+  /* padding-top: 32px; */
+  padding-top: var(--value_1);
+  top: -32px;  
+  opacity: 0.7;
+  backdrop-filter: blur(30px);
+  
+  background: deeppink;
+  color: white;
+  padding-left: 32px; 
+  padding-right: 32px; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 
 body {
   padding-top: 200px;  

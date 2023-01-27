@@ -2,31 +2,50 @@
 <html lang="ko">
   <head>
     <meta charset="utf-8">
-    <title>HTML</title>
+    
+    <title>테스트 페이지</title>
     <!-- css파일에서 스타일 가져오기 -->
     <link rel="stylesheet" href="style/expand_style.css">
   </head>
 
   <fixed_bar>
+    
+    <!-- nav 태그 속에 써야, 글자들이 고정바 속에서 정렬되어 나온다. -->
+    <nav>
+      <span>Menu1</span>
+      <span>Menu2</span>
+      <span>Menu3</span>
+    
+      <br>
+      <h1>
+        글자 아무거나 써봄
+      </h1>
+      <p>
+        내용
+      </p>
+
+    </nav>
+
+    
+
+
+  </fixed_bar>
+
+  <body>
+
     <!-- 다른 html 페이지 삽입 -->
     <iframe id="inlineFrameExample"
         title="Inline Frame Example"
         width="300"
         height="200"
         src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik">
-    </iframe>
-
-
-  </fixed_bar>
-
-  <body>
-    
+    </iframe>    
     <br>
 
     <!-- 다른 페이지로 이동하기 -->
     <a href="#" onclick="location.href='page_2.html'"> 클릭</a>
-
     <br>
+
     <!-- 이미지 삽입 -->
     <img src="image/img_1.jpg" alt="My Image">    
     <br>
@@ -34,10 +53,11 @@
     <br>
     <img src="image/img_2.jpg" alt="My Image">
 
+    <!-- 글자 써보기 -->
     <p style="color:green;">
       인라인 스타일을 이용하여 스타일을 적용하였습니다.      
       </p>
-    <p>외부 스타일 시트를 이용하여 스타일을 적용하였습니다.</p>
+    <p_style>외부 스타일 시트를 이용하여 스타일을 적용하였습니다.</p_style>
     
   </body>
 </html>
